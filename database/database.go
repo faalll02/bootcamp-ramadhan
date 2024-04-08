@@ -11,7 +11,7 @@ var DB *gorm.DB
 
 func ConnectDatabase() {
 	
-	dsn := "root:@tcp(127.0.0.1:3306)/bootcamp_ramadhan?charset=utf8mb4&parseTime=True&loc=Local"
+	dsn := "bagja001:@Bagja01@tcp(127.0.0.1:3306)/database-aufal?charset=utf8mb4&parseTime=True&loc=Local"
 	db, err := gorm.Open(mysql.Open(dsn), &gorm.Config{})
 
 	if err != nil {
